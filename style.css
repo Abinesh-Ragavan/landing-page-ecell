@@ -1,0 +1,391 @@
+        @import url(//db.onlinewebfonts.com/c/060e116a70e3096c52db16f61aaab194?family=Sofia+Pro);
+
+        body {
+            margin: 0px;
+            background: #1E242A;
+
+        }
+        #main {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+
+        }
+
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url("image1.png");
+            position: absolute;
+            bottom: -100%;
+            left: 30%;
+            animation: anim  2s forwards, anim2 3s forwards 3s;
+
+        }
+
+        #box1:after {
+            content: '';
+            position: absolute;
+            width: 530px;
+            height: 625px;
+            background-image: url('/image2.png');
+            left: 0px;
+            z-index: -1;
+
+
+        }
+
+        @keyframes anim {
+            from {
+                bottom: -100%;
+
+            }
+
+            to {
+                bottom: 0%;
+
+            }
+        }
+        @keyframes anim2 {
+             from {
+                 left: 30%;
+                 width: 530px;
+    
+             }
+    
+             to {
+                 width: 0px;
+                 left: 50%;
+             }
+    
+         }
+   
+
+       
+        
+
+        #box2 {
+            width: auto;
+            height: auto;
+            font-family: 'Bahnschrift Condensed';
+            color: white;
+            font-size: 9.0em;
+            font-weight: 500;
+            line-height: 130px;
+            position: absolute;
+            top: 250px;
+            left: 60px;
+            overflow: hidden;
+
+        }
+
+                 #text {
+                     position: relative;
+                     left: -100%;
+                     animation: anim4 2.5s forwards 3s;
+        
+                 }
+        
+                 @keyframes anim4 {
+                     from {
+                         left: -100%;
+                     }
+        
+                     to {
+                         left: 0%;
+                     }
+                 }
+
+       
+
+        #box3 {
+            width: auto;
+            height: auto;
+            font-family: 'Bahnschrift Condensed';
+            color: white;
+            font-size: 1.1em;
+            font-weight: 500;
+            line-height: 130px;
+            position: absolute;
+            top: 340px;
+            left: 90px;
+            overflow: hidden;
+
+        }
+
+        #text1 {
+            position: relative;
+            left: -100%;
+            animation: anim4 2.5s forwards 3s;
+
+        }
+
+        @keyframes anim4 {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        #box4 {
+            width: auto;
+            height: auto;
+            font-family: 'Bahnschrift Condensed';
+            color: white;
+            font-size: 1em;
+            font-weight: 500;
+            line-height: 130px;
+            position: absolute;
+            top: 380px;
+            left: 165px;
+            overflow: hidden;
+
+        }
+
+        #text2 {
+            position: relative;
+            left: -100%;
+            animation: anim5 2.5s forwards 3s;
+
+        }
+
+        @keyframes anim5 {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+
+
+ @media (min-width:768px)and (max-width:991px) {
+#box1 {
+        width: 530px;
+        height: 625px;
+        background-image: url("image1.png");
+        position: absolute;
+        bottom: -100%;
+        left: 33%;
+         background-size: 430px;
+
+        background-position-y:0px ;
+        background-repeat: no-repeat;  
+        animation: anim 2s forwards, anim2 3s forwards 3s;
+
+    }
+
+    #box1:after {
+        content: '';
+        position: absolute;
+        width: 530px;
+        height: 625px;
+        background-image: url('/image2.png');
+        background-size: 430px;
+        background-repeat: no-repeat;
+        background-position-y: 0px; 
+        left: 0px;
+        z-index: -1;
+
+
+    }
+
+         @keyframes anim2 {
+             from {
+                 left: 33%;
+                 width: 530px;
+    
+             }
+    
+             to {
+                 width: 0px;
+                 left: 50%;
+             }
+    
+         }
+   
+    
+
+     
+        
+    #box2 {
+        
+    font-size: 6.5em;
+    font-weight: 500;
+    top: 40%;
+    left: 10%;
+        
+        
+    }
+    
+    
+    #box3 {
+        font-size: 0.7em;
+        top: 50%;
+        left: 15%;
+           }
+
+    #box4 {
+           font-size: 0.9em;
+           top: 55%;
+            left: 20%;
+            }    
+    }
+
+        
+  
+
+ @media (min-width:478px)and (max-width:767px) {
+#box1 {
+       
+    width: 530px;
+    height: 625px;
+    background-image: url("image1.png");
+    background-position-y: 230px;
+    position: absolute;
+    background-size: 390px;
+    background-repeat: no-repeat;
+    bottom: -100%;
+    left: 5%;
+    animation: anim 2s forwards, anim2 3s forwards 3s;
+
+    }
+
+
+
+    #box1:after {
+        content: '';
+        position: absolute;
+        background-position-y: 230px;
+        width: 530px;
+        height: 625px;
+      
+        background-image: url('/image2.png');
+        background-size: 390px;
+        background-repeat: no-repeat;
+        
+        z-index: -1;
+        
+    }
+
+
+         @keyframes anim2 {
+             from {
+                 left: 5%;
+                 width: 530px;
+    
+             }
+    
+             to {
+                 width: 0px;
+                 left: 25%;
+             }
+    
+         }
+   
+    
+
+     
+        
+    #box2 {
+        
+    font-size: 6.5em;
+    font-weight: 500;
+    top: 30px;
+    left: 30%;
+        
+        
+    }
+    #box3 {
+        font-size: 0.7em;
+        top: 80px;
+        left: 35%;
+           }
+
+    #box4 {
+           font-size: 0.9em;
+           top: 95px;
+            left: 40%;
+            }    
+    }
+
+ @media  (max-width:477px) {
+     #box1 {
+
+         width: 530px;
+         height: 625px;
+         background-image: url("image1.png");
+         background-position-y: 230px;
+         position: absolute;
+         background-size: 350px;
+         background-repeat: no-repeat;
+         bottom: -100%;
+         left: -10%;
+         animation: anim 2s forwards, anim2 3s forwards 3s;
+
+     }
+
+
+
+     #box1:after {
+         content: '';
+         position: absolute;
+         background-position-y: 230px;
+         width: 530px;
+         height: 625px;
+
+         background-image: url('/image2.png');
+         background-size: 350px;
+         background-repeat: no-repeat;
+
+         z-index: -1;
+         
+     }
+
+
+     @keyframes anim2 {
+         from {
+             left: -10%;
+             width: 530px;
+
+         }
+
+         to {
+             width: 0px;
+             left: 10%;
+         }
+
+     }
+
+
+
+
+
+     #box2 {
+
+         font-size: 550%;
+         font-weight: 500;
+         top: 30px;
+         left: 20%;
+
+
+     }
+
+     #box3 {
+         font-size: 0.7em;
+         top: 80px;
+         left: 20%;
+     }
+
+     #box4 {
+         font-size: 0.9em;
+         top: 95px;
+         left: 30%;
+     }
+ }
