@@ -1,401 +1,368 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
 
 #every {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-
+  position: fixed;
+  top: 0px;
+  right: 0px;
 }
 
-
 body {
-    margin: 0px;
-    background: #1E242A;
-
+  margin: 0px;
+  background: #1e242a;
 }
 
 #main {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
 }
 
-
-
 #box1 {
-    width: 530px;
-    height: 625px;
-    background-image: url("image.png");
-    position: absolute;
-    bottom: -100%;
-    left: 30%;
-    animation: anim 2s forwards, anim2 3s forwards 3s;
-
+  width: 530px;
+  height: 625px;
+  background-image: url("image.png");
+  position: absolute;
+  bottom: -100%;
+  left: 30%;
+  animation: anim 2s forwards, anim2 3s forwards 3s;
 }
 
 #box1:after {
-    content: '';
-    position: absolute;
-    width: 530px;
-    height: 625px;
-    background-image: url('image2.png');
-    left: 0px;
-    z-index: -1;
-
-
+  content: "";
+  position: absolute;
+  width: 530px;
+  height: 625px;
+  background-image: url("image2.png");
+  left: 0px;
+  z-index: -1;
 }
 
 @keyframes anim {
-    from {
-        bottom: -100%;
+  from {
+    bottom: -100%;
+  }
 
-    }
-
-    to {
-        bottom: 0%;
-
-    }
+  to {
+    bottom: 0%;
+  }
 }
 
 @keyframes anim2 {
-    from {
-        left: 30%;
-        width: 530px;
+  from {
+    left: 30%;
+    width: 530px;
+  }
 
-    }
-
-    to {
-        width: 0px;
-        left: 50%;
-    }
-
+  to {
+    width: 0px;
+    left: 50%;
+  }
 }
 
-
-
-
-
 #box2 {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 
-    color: white;
-    font-size: 8em;
-    font-weight: 500;
-    line-height: 130px;
-    position: absolute;
-    top: 180px;
-    left: 50px;
-    overflow: hidden;
-
+  color: white;
+  font-size: 8em;
+  font-weight: 500;
+  line-height: 130px;
+  position: absolute;
+  top: 180px;
+  left: 50px;
+  overflow: hidden;
 }
 
 #text {
-    position: relative;
-    left: -200%;
-    animation: anim4 3s forwards 3s;
-
+  position: relative;
+  left: -200%;
+  animation: anim4 3s forwards 3s;
 }
 
 @keyframes anim4 {
-    from {
-        left: -200%;
-    }
+  from {
+    left: -200%;
+  }
 
-    to {
-        left: 0%;
-    }
+  to {
+    left: 0%;
+  }
 }
-
-
 
 #box3 {
-    width: auto;
-    height: auto;
-    font-family: 'Sofia', cursive;
-    color: white;
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 130px;
-    position: absolute;
-    top: 270px;
-    left: 60px;
-    overflow: hidden;
-
+  width: auto;
+  height: auto;
+  font-family: "Sofia", cursive;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 130px;
+  position: absolute;
+  top: 270px;
+  left: 60px;
+  overflow: hidden;
 }
 
-/* #text1 {
-    position: relative;
-    left: -100%;
-    animation: anim4 2.5s forwards 3s;
-
+#text1 {
+  position: relative;
+  left: -100%;
+  animation: anim4 2.5s forwards 3s;
 }
 
 @keyframes anim4 {
-    from {
-        left: -100%;
-    }
+  from {
+    left: -100%;
+  }
 
-    to {
-        left: 0%;
-    }
-} */
+  to {
+    left: 0%;
+  }
+}
 
 #box4 {
-    width: auto;
-    height: auto;
-    font-family: 'Sofia';
+  width: auto;
+  height: auto;
+  font-family: "Sofia";
 
-    color: white;
-    font-size: 1em;
-    font-weight: 500;
-    line-height: 130px;
-    position: absolute;
-    top: 310px;
-    left: 60px;
-    overflow: hidden;
-
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 130px;
+  position: absolute;
+  top: 310px;
+  left: 60px;
+  overflow: hidden;
 }
 
 #text2 {
-    position: relative;
-    left: -100%;
-    animation: anim5 2.5s forwards 3s;
-
+  position: relative;
+  left: -100%;
+  animation: anim5 2.5s forwards 3s;
 }
 
 @keyframes anim5 {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #box1 {
+    position: absolute;
+    bottom: -100%;
+    left: 33%;
+    background-size: 430px;
+
+    background-position-y: 70px;
+    background-repeat: no-repeat;
+  }
+
+  #box1:after {
+    position: absolute;
+
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position-y: 70px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  @keyframes anim2 {
     from {
-        left: -100%;
+      left: 33%;
+      width: 530px;
     }
 
     to {
-        left: 0%;
+      width: 0px;
+      left: 50%;
     }
+  }
+
+  #box2 {
+    font-size: 6.5em;
+
+    top: 40%;
+    left: 5%;
+  }
+
+  #box3 {
+    font-size: 0.7em;
+    top: 50%;
+    left: 10%;
+  }
+
+  #box4 {
+    font-size: 0.9em;
+    top: 55%;
+    left: 10%;
+  }
 }
 
+@media (min-width: 478px) and (max-width: 767px) {
+  #box1 {
+    background-position-y: 230px;
+    position: absolute;
+    background-size: 390px;
+    background-repeat: no-repeat;
+    bottom: -100%;
+    left: 5%;
+  }
 
+  #box1:after {
+    position: absolute;
+    background-position-y: 230px;
 
-@media (min-width:768px)and (max-width:991px) {
-    #box1 {
+    background-size: 390px;
+    background-repeat: no-repeat;
 
-        position: absolute;
-        bottom: -100%;
-        left: 33%;
-        background-size: 430px;
+    z-index: -1;
+  }
 
-        background-position-y: 70px;
-        background-repeat: no-repeat;
-
-
+  @keyframes anim2 {
+    from {
+      left: 5%;
+      width: 500px;
     }
 
-    #box1:after {
-
-        position: absolute;
-
-        background-size: 430px;
-        background-repeat: no-repeat;
-        background-position-y: 70px;
-        left: 0px;
-        z-index: -1;
-
-
+    to {
+      width: 0px;
+      margin-left: 0;
+      left: 11%;
     }
+  }
 
-    @keyframes anim2 {
-        from {
-            left: 33%;
-            width: 530px;
+  #box2 {
+    font-size: 6em;
 
-        }
+    top: 30px;
+    left: 30%;
+  }
 
-        to {
-            width: 0px;
-            left: 50%;
-        }
+  #box3 {
+    font-size: 0.7em;
+    top: 80px;
 
-    }
+    left: 35%;
+  }
 
-
-
-
-
-    #box2 {
-
-        font-size: 6.5em;
-
-        top: 40%;
-        left: 10%;
-
-
-    }
-
-
-    #box3 {
-        font-size: 0.7em;
-        top: 50%;
-        left: 15%;
-    }
-
-    #box4 {
-        font-size: 0.9em;
-        top: 55%;
-        left: 20%;
-    }
+  #box4 {
+    font-size: 0.9em;
+    top: 95px;
+    left: 40%;
+  }
 }
 
+@media (max-width: 430px) {
+  #box1 {
+    background-position-y: 230px;
+    position: absolute;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    bottom: -100%;
+    left: -10%;
+  }
 
+  #box1:after {
+    position: absolute;
+    background-position-y: 230px;
 
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: 100px;
 
-@media (min-width:478px)and (max-width:767px) {
-    #box1 {
+    z-index: -1;
+  }
 
-
-        background-position-y: 230px;
-        position: absolute;
-        background-size: 390px;
-        background-repeat: no-repeat;
-        bottom: -100%;
-        left: 5%;
-
-
+  @keyframes anim2 {
+    from {
+      left: -10%;
+      width: 530px;
     }
 
-
-
-    #box1:after {
-
-        position: absolute;
-        background-position-y: 230px;
-
-
-        background-size: 390px;
-        background-repeat: no-repeat;
-
-        z-index: -1;
-
+    to {
+      width: 0px;
+      left: -4%;
     }
+  }
 
+  #box2 {
+    font-size: 300%;
 
-    @keyframes anim2 {
-        from {
+    top: 30px;
+    margin-left: 0;
+    left: 33%;
+  }
 
+  #box3 {
+    font-size: 0.2em;
+    margin-left: 0;
+    top: 70px;
 
-            left: 5%;
-            width: 500px;
+    left: 35%;
+  }
 
-        }
-
-        to {
-            width: 0px;
-            margin-left: 0;
-            left: 11%;
-        }
-
-    }
-
-
-
-
-
-    #box2 {
-
-        font-size: 6.0em;
-
-        top: 30px;
-        left: 30%;
-
-
-    }
-
-    #box3 {
-        font-size: 0.7em;
-        top: 80px;
-
-        left: 35%;
-    }
-
-    #box4 {
-        font-size: 0.9em;
-        top: 95px;
-        left: 40%;
-    }
+  #box4 {
+    font-size: 0.1em;
+    top: 95px;
+    left: 45%;
+  }
 }
 
-@media (max-width:477px) {
-    #box1 {
+@media (max-width: 350px) {
+  #box1 {
+    background-position-y: 230px;
+    position: absolute;
+    background-size: 900px;
+    background-repeat: no-repeat;
+    bottom: -100%;
+    left: 90%;
+  }
+  #box1:after {
+    position: absolute;
+    background-position-y: 250px;
+    background-position-x: 50px;
+    background-size: 200px;
+    background-repeat: no-repeat;
 
-
-
-        background-position-y: 230px;
-        position: absolute;
-        background-size: 200px;
-        background-repeat: no-repeat;
-        bottom: -100%;
-        left: -10%;
-
-
-
+    z-index: -1;
+  }
+  @keyframes anim2 {
+    from {
+      left: -10%;
+      width: 130px;
     }
 
-
-
-    #box1:after {
-
-        position: absolute;
-        background-position-y: 230px;
-
-        background-size: 200px;
-        background-repeat: no-repeat;
-
-        z-index: -1;
-
+    to {
+      width: 0px;
+      left: -4%;
     }
+  }
 
+  #box2 {
+    font-size: 300%;
 
-    @keyframes anim2 {
-        from {
-            left: -10%;
-            width: 530px;
+    top: 30px;
+    margin-left: 0;
+    left: 25%;
+  }
 
-        }
+  #box3 {
+    font-size: 0.2em;
+    margin-left: 0;
+    top: 70px;
 
-        to {
-            width: 0px;
-            left: -4%;
-        }
+    left: 27%;
+  }
 
-    }
-
-
-
-
-
-    #box2 {
-
-        font-size: 300%;
-
-        top: 30px;
-        margin-left: 0;
-        left: 25%;
-
-
-    }
-
-    #box3 {
-        font-size: 0.2em;
-        margin-left: 0;
-        top: 70px;
-
-        left: 27%;
-    }
-
-    #box4 {
-        font-size: 0.1em;
-        top: 95px;
-        left: 35%;
-    }
+  #box4 {
+    font-size: 0.1em;
+    top: 95px;
+    left: 35%;
+  }
 }
